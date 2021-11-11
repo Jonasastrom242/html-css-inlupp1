@@ -9,7 +9,7 @@
     --primary-text-color: #626262;
     --primary-bg-color:#f7f7f7;
     --primary-title-color:#363636;
-    --primary-placeholder1-color:#111010;
+    --primary-placeholder1-color:#DEDEDE;
 
 }
 
@@ -37,15 +37,35 @@ body {
 .link-top:hover {
     color: var(--primary-green-color)
 }
+.blue-font {
+    color: var(--primary-blue-color)
+}
 
 /* NAV */
 
 .topnav {
     justify-content: left;
     align-items: center;
-    padding: 1rem;
+    padding: 0.5rem;
+    justify-content: space-between;
+}
+.navbar {
+    padding: 2rem 0;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 li {
     list-style: none;
-    padding: 0 1rem 0 1rem;
+    padding: 0 0.7rem 0 0.7rem;
+}
+p1 {
+    font-size: 0.7rem;
+}
+#logo {
+    width: 72%;
+}
+#showcase {
+    background-color: var(--primary-placeholder1-color);
+
 }
