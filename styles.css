@@ -13,13 +13,18 @@
 
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@300&display=swap');
+
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow-x: hidden;
 }
 
 .container {
     width: 80%;
     margin: auto;
+    
 
 }
 .d-flex {
@@ -49,23 +54,98 @@ body {
     padding: 0.5rem;
     justify-content: space-between;
 }
+.list {
+    list-style: none;
+    padding: 0 0.7rem 0 0.7rem;
+}
 .navbar {
     padding: 2rem 0;
     justify-content: space-between;
     align-items: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 0.8rem;
     
 }
-li {
-    list-style: none;
-    padding: 0 0.7rem 0 0.7rem;
+
+.navbar a {
+    text-decoration: none;
+    color: var(--primary-title-color);
 }
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
 p1 {
     font-size: 0.7rem;
 }
+
 #logo {
-    width: 72%;
+    width: 160px;
 }
+
+/* SHOWCASE */
 #showcase {
     background-color: var(--primary-placeholder1-color);
+    padding: 1rem 0 0 0;
+    border: 0;
+    /* width: auto; */
+        /* display: flex; */
+}
 
+#showcase h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 0 0 1rem 0;
+    
+}
+#showcase p {
+    font-size: .7rem;
+    padding: 0 0 2rem 0;
+}
+.extend-bg {
+    background-color: var(--primary-placeholder1-color);
+    position: relative;
+    
+
+}
+.extend-bg:before {
+    content:"";
+    background-color: var(--primary-placeholder1-color);
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    width: 100vw;
+    margin-left: -50%;
+    transform: translateX(-50);
+    z-index: -1;
+
+}
+.extend-bg:after {
+    content:"";
+    background-color: var(--primary-placeholder1-color);
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    width: 100vw;
+    
+    transform: translateX( 50%);
+    z-index: -1;
+}
+.btn-rectangular {
+    color: #fff;
+    padding: 0.7rem 2rem 0.8rem 2rem;
+    border-radius: 8px;
+    border: 0;
+    font-size: .7rem;
+    background-color: var(--primary-blue-color);
+}
+.btn-rectangular:hover {
+    background-color: var(--primary-green-color);
+    cursor: pointer;
 }
