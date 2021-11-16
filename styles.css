@@ -201,18 +201,20 @@ p1 {
     padding-top: 2rem;
 }
 .grid-text p { 
-    font-size: 1.3rem;
+    font-size: 1.   3rem;
     padding: 0 0 1rem 0;
+    color: var(--primary-text-color)
     
 }
 .grid-numbers {
     justify-content: space-between;
     margin-right: 2rem;
+    
 }
 .grid-numbers h3 {
     color: var(--primary-blue-color);
     font-family: 'Roboto Slab', serif;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 300;
 }
 .grid-numbers p {
@@ -222,9 +224,81 @@ p1 {
 }
 .placeholder2 {
     margin-left: 5rem;
+    margin-right: 5rem;
     width: 100%;
     height: auto;
 }
+
+/* OUR SERVICES */
+
+#services h1 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    font-size: 2.5rem;
+    text-align: center;
+}
+#services hr {
+    border: solid 3px;
+    margin: 1rem 0 2rem 0;
+    color: var(--primary-green-color);
+}
+
+.d-grid2 {
+    display: grid;
+    margin-top: 7rem;;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 1rem;
+   
+}
+.grid2-item {
+    background-color: #fff;
+    min-width: 350px;
+    min-height: 300px;
+    padding: 4rem 2.5rem 4rem 2.5rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.grid2-item h2 {
+    font-family: 'Roboto Slab', serif;
+    color: var(--primary-title-color);
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center  ;
+}
+.grid2-item a {
+    /* font-family: 'Roboto Slab', serif; */
+    text-decoration: none;
+    color: var(--primary-text-color);
+    font-weight: 400;
+    font-size: 1.1rem;
+    text-align: center;
+}
+.grid2-item:hover {
+    box-shadow: 0px 0px 25px #8080803a;
+    transition-duration: .01s;
+    transition-delay: .6s;
+
+}
+.grid-btn {
+    border-radius: 50%;
+    padding: 1.5rem;
+    /* position: absolute; */
+    justify-content: center;
+    border: none;
+    background-color: var(--primary-green-color);
+}
+.grid-btn:hover {
+    background-color: var(--primary-blue-color);
+    transform: scale(110%);
+    transition: ease-out 170ms;
+}
+
 
 
 @media (max-width: 700px) {
