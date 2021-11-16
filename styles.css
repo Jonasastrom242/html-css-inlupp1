@@ -21,12 +21,15 @@ body {
     overflow-x: hidden;
     background-color: var(--primary-bg-color);
 }
+html {
+    
+}
+
+
 
 .container {
     width: 80%;
     margin: auto;
-    
-
 }
 .d-flex {
     display: flex;
@@ -64,7 +67,6 @@ body {
     justify-content: space-between;
     align-items: center;
     font-family: 'Roboto Slab', serif;
-        
 }
 
 .navbar a {
@@ -72,13 +74,11 @@ body {
     font-size: 1.2rem;
     color: var(--primary-title-color);
 }
-
 .navbar a:hover {
     text-decoration: underline;
 }
-
 p1 {
-    font-size: 1rem;
+    font-size: 16px;
 }
 
 #logo {
@@ -162,6 +162,11 @@ p1 {
 #about_us {
     padding-top: 3rem;
 }
+#about_us hr {
+    border: solid 3px;
+    margin: 1rem 0 2rem 0;
+    color: var(--primary-green-color);
+}
 
 .d-grid {
     display: grid;
@@ -207,15 +212,20 @@ p1 {
 .grid-numbers h3 {
     color: var(--primary-blue-color);
     font-family: 'Roboto Slab', serif;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: 300;
 }
 .grid-numbers p {
-    font-size: 1.2rem;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.1rem;
+    font-weight: 300;
 }
 .placeholder2 {
     margin-left: 5rem;
+    width: 100%;
+    height: auto;
 }
+
 
 @media (max-width: 700px) {
     .container {
