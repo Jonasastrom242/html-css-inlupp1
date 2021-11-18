@@ -30,6 +30,7 @@ html {
 .container {
     width: 80%;
     margin: auto;
+  
 }
 .d-flex {
     display: flex;
@@ -78,7 +79,7 @@ html {
     text-decoration: underline;
 }
 p1 {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 #logo {
@@ -142,7 +143,7 @@ p1 {
 .btn-rectangular {
     color: #fff;
     padding: 0.7rem 2.5rem 0.8rem 2.5rem;
-    border-radius: 8px;
+    border-radius: .5rem;
     border: 0;
     font-size: 1.3rem;
     background-color: var(--primary-blue-color);
@@ -153,7 +154,7 @@ p1 {
 }
 .placeholder1 {
     padding-right: 7.5rem;
-    width: 100%;
+    width: 40rem;
     height: auto;
 }
 
@@ -280,7 +281,7 @@ p1 {
     text-align: center;
 }
 .grid2-item:hover {
-    box-shadow: 0px 0px 25px #8080803a;
+    box-shadow: 0px 0px 25px #2c2c2c18;
     transition-duration: .01s;
     transition-delay: .6s;
 
@@ -293,13 +294,84 @@ p1 {
     border: none;
     background-color: var(--primary-green-color);
 }
-.grid-btn:hover {
+/* .grid-btn:hover {
     background-color: var(--primary-blue-color);
     transform: scale(110%);
     transition: ease-out 170ms;
+} */
+.grid2-item:hover .grid-btn {
+    background-color: var(--primary-blue-color);
+    box-shadow: 0px 0px 0px 10px #31aaeb4b;
+    transition: box-shadow .7s;
+}
+/* a.grid-fill {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+} */
+
+/* APPOINTMENT */
+#appointment {
+    padding-top: 3rem;
+    
+}
+.d-flex2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10rem;
+    
+}
+.appointment-bg-ext {
+    background-color: var(--primary-blue-color);
+    height: 10rem;
+    align-items: center;
+}
+.appointment-txt {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5rem;
+    color: #fff;
+    
+    
+    
+}
+.btn-rectangular2 {
+    color: var(--primary-blue-color);
+    padding: 0.7rem 2.5rem 0.8rem 2.5rem;
+    border-radius: .5rem;
+    font-size: 1.3rem;
+    background-color: #fff;
+    border: .2rem solid #fff;
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: ;
+   
+    
+    
+    
+}
+.btn-rectangular2:hover {
+    background-color: var(--primary-blue-color);
+    color: #fff;
+    border: .2rem solid #fff;
+    transition: ease-out .2s;
+    cursor: pointer;
 }
 
-
+/* FOOTER */
+#footer {
+    background-color: #28a2e4;
+    HEIGHT: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer p {
+    font-size: 1rem;
+    color: #fff;
+    
+}
 
 @media (max-width: 700px) {
     .container {
