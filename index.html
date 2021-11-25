@@ -30,30 +30,33 @@
 
 <hr color="#A9A9A9" size="0.8">
 
-<section id="main_menu" class="d-flex navbar container">
+<section id="main_menu" class="navbar container">
     <div>
     <img src="./img/Logo.png" alt="LOGO" id="logo">
     </div>
-    <div>
-        <ul class="d-flex navbar">
+    <NAV>
+        <ul class="list d-flex">
             <li class="list"><a href="#">Home</a></li>
             <li class="list"><a href="#about_us">About Us</a></li>
             <li class="list"><a href="#services">Services</a></li>
             <li class="list"><a href="#appointment">Contact</a></li>
 
         </ul>
-    </div>
+        <div class="hamburger"><a href="#"><img src="/img/bar-menu.png" class="hamburger"></a></i>
+        </div>
+    </NAV>
 
 </section>
 
-<section id="showcase" class="d-flex container extend-bg">
-    <div class="container"> 
+<section id="showcase" class="extend-bg">
+    <div class="container d-flex justfi"> 
         <img src="/img/placehold1.png" class="placeholder1" alt="Placerholder Girl with coffe">
-    </div>
-    <div class="container">
-        <h1>Modern technologies ensure safety</h1>
-        <p>Our clinic is equipped with the highest quality medical and dental equipment, which allows for quick and effective treatment of the patient.</p>
-        <a href="#about_us"><button class="btn-rectangular">About our clinic</button></a>
+    
+        <div class="container d-flex flex-vertical">
+            <h1>Modern technologies ensure safety</h1>
+            <p>Our clinic is equipped with the highest quality medical and dental equipment, which allows for quick and effective treatment of the patient.</p>
+            <a href="#about_us"><button class="btn-rectangular">About our clinic</button></a>
+        </div>
     </div>
 </section>
 
@@ -74,12 +77,14 @@
 
 </section>
 
-<section id="services" class="container d-grid2">
-    <div></div>
-    <div>
+<div class="services-title"><h1>Our services</h1></div>
+
+<section id="services" class="container2 d-grid2">
+    <div class="services-show"></div>
+    <div class="services-show">
         <h1>Our services</h1><hr>
     </div>
-    <div></div>
+    <div class="services-show"></div>
     <div class="grid2-item" style="cursor:pointer" onclick="document.location='#'">
         <a href="#" class="grid-btn"><img src="/img/tooth_icon1.png"></a>
         <a href="#"><h2>Tooth inspection</h2>

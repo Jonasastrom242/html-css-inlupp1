@@ -10,7 +10,6 @@
     --primary-bg-color:#f7f7f7;
     --primary-title-color:#363636;
     --primary-placeholder1-color:#DEDEDE;
-
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@300&display=swap');
@@ -30,10 +29,16 @@ html {
 .container {
     width: 80%;
     margin: auto;
-  
+}
+.container2 {
+    width: 80%;
+    margin: auto;
 }
 .d-flex {
     display: flex;
+}
+.flex-vertical {
+    flex-direction: column;
 }
 .justify-content-center {
     justify-content: center;
@@ -64,6 +69,7 @@ html {
     padding: 0 0.7rem 0 0.7rem;
 }
 .navbar {
+    display: flex;
     padding: 2rem 0;
     justify-content: space-between;
     align-items: center;
@@ -78,13 +84,16 @@ html {
 .navbar a:hover {
     text-decoration: underline;
 }
-p1 {
-    font-size: 1rem;
+.hamburger {
+    display: none;
+    width: 4rem;
+    height: auto;
+    align-items: center;
+
 }
 
 #logo {
-    width: 100%;
-    height: auto;
+    width: 15rem;
 }
 
 /* SHOWCASE */
@@ -101,7 +110,6 @@ p1 {
     font-size: 4rem;
     font-weight: 300;
     padding: 0 0 3rem 0;
-    
 }
 #showcase p {
     font-size: 1.3rem;
@@ -109,37 +117,8 @@ p1 {
 }
 .extend-bg {
     background-color: var(--primary-placeholder1-color);
-    position: relative;
-    
+}
 
-}
-.extend-bg:before {
-    content:"";
-    background-color: var(--primary-placeholder1-color);
-    position: absolute;
-    top:0;
-    right:0;
-    bottom:0;
-    left:0;
-    width: 100vw;
-    margin-left: -50%;
-    transform: translateX(-50);
-    z-index: -1;
-
-}
-.extend-bg:after {
-    content:"";
-    background-color: var(--primary-placeholder1-color);
-    position: absolute;
-    top:0;
-    right:0;
-    bottom:0;
-    left:0;
-    width: 100vw;
-    
-    transform: translateX( 50%);
-    z-index: -1;
-}
 .btn-rectangular {
     color: #fff;
     padding: 0.7rem 2.5rem 0.8rem 2.5rem;
@@ -187,7 +166,6 @@ p1 {
     grid-row: 1 / span 2;
     height: auto;
     width: 100%;
-    /* width: 50%; */
 }
 .grid-text em {
     color: var(--primary-blue-color);
@@ -205,12 +183,10 @@ p1 {
     font-size: 1.   3rem;
     padding: 0 0 1rem 0;
     color: var(--primary-text-color)
-    
 }
 .grid-numbers {
     justify-content: space-between;
     margin-right: 2rem;
-    
 }
 .grid-numbers h3 {
     color: var(--primary-blue-color);
@@ -243,6 +219,13 @@ p1 {
     margin: 1rem 0 2rem 0;
     color: var(--primary-green-color);
 }
+.services-title h1 {
+    display: none;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    font-size: 2.5rem;
+    text-align: center;
+}
 
 .d-grid2 {
     display: grid;
@@ -250,7 +233,6 @@ p1 {
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
     gap: 1rem;
-   
 }
 .grid2-item {
     background-color: #fff;
@@ -273,7 +255,6 @@ p1 {
     text-align: center  ;
 }
 .grid2-item a {
-    /* font-family: 'Roboto Slab', serif; */
     text-decoration: none;
     color: var(--primary-text-color);
     font-weight: 400;
@@ -289,7 +270,6 @@ p1 {
 .grid-btn {
     border-radius: 50%;
     padding: 1.5rem;
-    /* position: absolute; */
     justify-content: center;
     border: none;
     background-color: var(--primary-green-color);
@@ -314,14 +294,12 @@ p1 {
 /* APPOINTMENT */
 #appointment {
     padding-top: 3rem;
-    
 }
 .d-flex2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 10rem;
-    
 }
 .appointment-bg-ext {
     background-color: var(--primary-blue-color);
@@ -332,9 +310,6 @@ p1 {
     font-family: 'Roboto Slab', serif;
     font-size: 1.5rem;
     color: #fff;
-    
-    
-    
 }
 .btn-rectangular2 {
     color: var(--primary-blue-color);
@@ -345,11 +320,6 @@ p1 {
     border: .2rem solid #fff;
     font-family: 'Roboto';
     font-weight: 600;
-    font-size: ;
-   
-    
-    
-    
 }
 .btn-rectangular2:hover {
     background-color: var(--primary-blue-color);
@@ -370,10 +340,9 @@ p1 {
 #footer p {
     font-size: 1rem;
     color: #fff;
-    
 }
 
-@media (max-width: 700px) {
+/* @media (max-width: 700px) {
     .container {
         width: 100%;
     }
@@ -381,5 +350,157 @@ p1 {
 @media (max-width: 580px) {
     .container {
         width: 580px;
+    }
+} */
+@media (max-width: 1356px) {
+    #showcase h1 {
+        font-size: 3.5rem;
+        padding-bottom: 2rem;
+    }
+    #showcase p {
+        padding-bottom: 2rem;
+    }
+
+    .placeholder1 {
+        width: 35rem;
+    }
+    .container2 {
+        width: 95%;
+    }
+}
+@media (max-width: 1184px) {
+    #showcase h1 {
+        font-size: 3.0rem;
+        padding-bottom: 1.5rem; 
+    }
+    #showcase p {
+        font-size: 1.3rem;
+        padding-bottom: 1.5rem;
+    }
+    .placeholder1 {
+        width: 30rem;
+        padding-right: 4rem;
+    }
+    .grid-numbers h3 {
+        font-size: 2rem;
+    }
+    .grid-number p {
+        font-size: .9rem;
+    }
+    .grid2-item {
+        background-color: #fff;
+        min-width: 300px;
+        min-height: 300px;
+        padding: 2rem 1.5rem 2rem 1.5rem;
+    }
+}
+@media (max-width: 1019px) {
+    #showcase h1 {
+        font-size: 2.5rem;
+        padding-bottom: 1.1rem; 
+    }
+    #showcase p {
+        font-size: 1rem;
+        padding-bottom: 1.5rem;
+    }
+    .placeholder1 {
+        width: 25rem;
+        padding-right: 3rem;
+    }
+    .grid-numbers h3 {
+        font-size: 1.5rem;
+    }
+    .grid-number p {
+        font-size: .7rem;
+    }
+    .grid-text h2 {
+        font-size: 2rem;
+    }
+
+    .placeholder2 {
+        /* margin-left: 1rem; */
+        align-items: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .grid-picture {
+        width: 100%;
+        padding-top: 3rem;
+    }
+    .grid2-item {
+        padding: 1rem .5rem 1rem .5rem;
+    }
+}
+@media (max-width: 980px) {
+    .grid2-item {
+        min-width: 250px;
+        min-height: 300px;
+    }
+    .grid2-item p {
+        font-size: .8em;
+    }
+    .grid2-item h2 {
+        font-size: 1rem;
+    }
+    .appointment-txt {
+        font-size: 1.2rem;
+    }
+    .btn-rectangular2 {
+        padding: 0.7rem 1rem 0.8rem 1rem;
+    }
+}
+
+@media (max-width: 857px) {
+    .placeholder1 {
+        display: none;
+    }
+    .placeholder2 {
+        display: none;
+    }
+    .btn-rectangular {
+        margin-bottom: 2rem;
+    }
+    .navbar a {
+        font-size: .9rem;
+    }
+    .list {
+        padding: 0 0.3rem 0 0.3rem;
+    }
+    .d-flex2 {
+        flex-direction: column;
+        height: 6rem;
+    }
+    .appointment-bg-ext {
+        height: auto;
+        padding-bottom: 1rem;;
+    }
+
+}
+@media (max-width: 830px) {
+    .services-show {
+        display: none;
+    }
+    .d-grid2 {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+        margin-top: 2rem;
+    }
+    .services-title h1 {
+        display: flex;
+        margin-top: 4rem;
+        justify-content: center;
+    }
+}
+@media (max-width: 650px) {
+    .topnav {
+        display: none;
+    }
+    .list {
+        display: none;
+    }
+    
+    .hamburger {
+        display: flex;
+        
     }
 }
