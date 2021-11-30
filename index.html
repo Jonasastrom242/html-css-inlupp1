@@ -11,6 +11,17 @@
 </head>
 <body>
 
+<script>
+    function menuFunction() {
+  var x = document.getElementById("hidden-menu");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
 <section id="top_menu" class="container d-flex topnav">
     <div>
         <i class="far fa-clock blue-font"></i>
@@ -40,21 +51,27 @@
             <li class="list"><a href="#about_us">About Us</a></li>
             <li class="list"><a href="#services">Services</a></li>
             <li class="list"><a href="#appointment">Contact</a></li>
-
         </ul>
-        <div class="hamburger"><a href="#"><img src="/img/bar-menu.png" class="hamburger"></a></i>
+        <div class="hamburger">
+            <a href="#" onclick="menuFunction();"><img src="/img/bar-menu.png" class="hamburger"></a></i>
         </div>
-        <div class="hamburger-links">
-            <div class="line line1"></div>
-            <div class="line line2"></div>
-            <div class="line line3"></div>
-        </div>
-    </NAV>
 
+    </NAV>
+    
 </section>
 
+<section>
+    <ul id="hidden-menu">
+        <li class="list3"><a href="#">Home</a></li>
+        <li class="list3"><a href="#about_us">About Us</a></li>
+        <li class="list3"><a href="#services">Services</a></li>
+        <li class="list3"><a href="#appointment">Contact</a></li>
+    </ul>
+</section>
+<hr id="hidden-menu">
+
 <section id="showcase" class="extend-bg">
-    <div class="container d-flex justfi"> 
+    <div class="container d-flex"> 
         <img src="/img/placehold1.png" class="placeholder1" alt="Placerholder Girl with coffe">
     
         <div class="container d-flex flex-vertical">
@@ -151,6 +168,22 @@
     </div>
 
 
+</section>
+
+<section id="bottom_menu" class="d-flex bottomnav">
+    <div>
+        <i class="far fa-clock blue-font"></i>
+        <p1 class="align-items-center">Monday - Friday 09:00 - 18:00</p1>
+    </div>
+    <div>
+        <ul class="d-flex">
+            <li class="list2"><a href="#"><i class="fab fa-facebook-f link-top fa-sm blue-font"></i></a></li>
+            <li class="list2"><a href="#"><i class="fab fa-twitter link-top fa-sm blue-font"></i></a></li>
+            <li class="list2"><a href="#"><i class="fab fa-google-plus-g link-top fa-sm blue-font"></i></a></li>
+            <li class="list2"><a href="#"><i class="fab fa-instagram link-top fa-sm blue-font"></i></i></a></li>
+
+        </ul>
+    </div>
 </section>
 
 <section id="footer">
